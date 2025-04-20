@@ -17,3 +17,4 @@ Before starting a new feature or performing any general change to code, make sur
 4. Make changes...
 5. When done making changes locally stage, commit and push the changes to GitHub by performing 'git add .', 'git commit -m "Commit Message"' and 'git push --set-upstream origin nameOfFeatureBranch' (MAKE SURE TO USE THE NAME OF YOUR CREATED FEATURE BRANCH FOR UPSTREAM).
 6. You changes have now been pushed to GitHub, next step is to create a pull request, navigate to https://github.com/DanielIversenCompSci/workout-backend and use the new changes pop-up to create a PR.
+![Create PR](images/create-pr.png)
