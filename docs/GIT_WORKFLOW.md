@@ -33,6 +33,8 @@ When the changes has been pushed to remote, create a PR for another dev to revie
 5. If reviewers have comments, find them at the created PR. Resolve potential issues on your local feature branch and push again when finished to override the first push. If reviewers suggest the ideal solutions its also possible to commit suggestions directly in the PR thread.
 6. Finally when the comments have been resolved either way, click 'Resolve conversation' followed by 'Merge pull request'.
 ![Resolve comments](images/resolve-comments.png)
+7. OPS! Last important note, if pushing to a feature branch that recently completed a PR might mean the feature branch have not been autmatically deleted yet. To create a PR on a existing feature branch that has been used before: Go to the repo index page -> Under branches select the feature branch -> Click the contribute dropdown and click 'Open pull request'.
+![New PR on old FB](images/pr-existing.png)
 
 
 ### Reviewing a pull request:
