@@ -1,5 +1,5 @@
 # Code convetions for this project
-Will contain all general convention used in this project. All related from coding to other development practices.
+This document contains all general conventions used in this project, covering coding practices and other development guidelines.
 
 
 * Git conventions
