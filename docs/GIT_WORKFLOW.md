@@ -20,7 +20,7 @@ Before starting a new feature or performing any general change to code, make sur
 
 
 ### Creating a pull request
-When the changes has been pushed to remote, create a PR for another dev to review, before finally merging it into master.
+When the changes have been pushed to remote, create a PR for another dev to review, before finally merging it into master.
 <br>
 
 1. On the GitHub repo index page, click the pop-up about new changes pushed, click the button saying 'compare and pull request'
