@@ -19,6 +19,7 @@ Before starting a new feature or performing any general change to code, make sur
 6. You changes have now been pushed to GitHub, next step is to create a pull request, navigate to https://github.com/DanielIversenCompSci/workout-backend and use the new changes pop-up to create a PR.
 
 
+
 ### Creating a pull request:
 When the changes has been pushed to remote, create a PR for another dev to review, before finally merging it into master.
 <br>
