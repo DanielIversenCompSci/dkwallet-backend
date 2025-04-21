@@ -45,3 +45,8 @@ When a PR is made, some guidelines as a reviwer.
 ![Inspect changes](images/inspect-changes.png)
 2. Comments can be connected to lines of code by clicking the '+' sign at the left side of the line you with to comment on. This way you can comment lines of code and suggest better solutions.
 3. In the main conversation page of the PR, specify what needs to be improved and whatever thoughts you have that might help.
+
+
+### Kanban conventions:
+How to create work items, label them and move them through phases.
+<br>
