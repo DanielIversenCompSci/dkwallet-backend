@@ -25,7 +25,8 @@ When the changes has been pushed to remote, create a PR for another dev to revie
 
 1. On the GitHub repo index page, click the pop-up about new changes pushed, click the button saying 'compare and pull request'.
 ![Create PR](images/create-pr.png)
-2. Fill out the PR, be clear about what KANBAN workitem the feature relates to. Give any information relevant for the reviewer.
+2. Fill out the PR, be clear about what KANBAN workitem the feature relates to. Give any information relevant for the reviewer. OPS! Make sure to link the Kanban Workitem that is being reviewed, see picture.
+![Link workitem](images/id.png)
 3. OPS! Before creating the PR make sure to add reviewers, in our case just add all remainings contributers since we are only three.
 ![Add reviewers](images/add-reviewers.png)
 4. Wait for you PR to be reviewed. If reviewers have comments, they must be resolved. Finally merge the pull request, whereafter the feature branch should automatically be deleted from the GitHub repo.
@@ -47,6 +48,24 @@ When a PR is made, some guidelines as a reviwer.
 3. In the main conversation page of the PR, specify what needs to be improved and whatever thoughts you have that might help.
 
 
+## Git and Kanban convetions
+
+
+### Git branch convetions:
+* when creating a feature branch use naming convention: 'label'/'brief description'
+* Use lower case letters, use '-' inplace of spaces
+    Example: feature/login-endpoint
+    Example: documentation/code-conventios
+    Example: bug/failed-jwtauth
+
+
 ### Kanban conventions:
 How to create work items, label them and move them through phases.
 <br>
+
+1. Contributing to the code must follow the Kanban conventions. Each process of 'code -> commit -> push' must happen for each individual kanban workitem. It's not considered good practice to touch on multiple workitems over a single process. This way we ensure to keep task administration structured and limit work in progress and also keeps the master branch as up to date as possible.
+2. Kanban workitems must be created as issues, they must have short and descriptive titles, whith more indepth descriptions.
+3. Kanban workitems must be labeled. Use enhancement for features, documentation for docs and bug for something that stopped working.
+![Label items](images/link-item.png)
+4. Locate the work item id by looking at the item on the kanban board, they will be '#number'
+![Locate id](images/locate-id.png)
