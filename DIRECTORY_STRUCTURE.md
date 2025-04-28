@@ -6,9 +6,9 @@ hello-api/
 │  ├─ routes/
 │  │   └─ ping.routes.js
 │  ├─ controllers/
-│  ├─ models/          # (if using an ORM)
-│  └─ server.js        # entry file (instead of index.js)
-├─ tests/              # jest / vitest specs
+│  └─ models/
+├─ index.js 
+├─ tests/       # only if tests are made/needed
 ├─ .env
 ├─ .gitignore
 └─ package.json
