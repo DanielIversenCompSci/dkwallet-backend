@@ -1,17 +1,15 @@
+import 'dotenv/config';               
 import express from 'express';
-import dotenv from 'dotenv';
-dotenv.config();
+import pingRouter    from './src/routes/ping.route.js';
+import sessionRouter from './src/routes/session.route.js';
 
-const PORT = process.env.PORT;
-const app  = express();
-
+const app = express();
 app.use(express.json());
 
-// one test route ***
-app.get('/ping', (req, res) => res.json({msg: 'pong from RelyingParty service (ACK)'}));
+app.use('/ping',    pingRouter);
+app.use('/session', sessionRouter);
 
-// on startup ***
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
-  console.log(`🚀 CredentialProvider serivce running → http://localhost:${PORT}`);
-  console.log(`'curl http://localhost:${PORT}/ping' in a new terminal to perform a ping test`);
-});
+    console.log(`RelyingParty service is running http://localhost:${PORT}`);	
+})

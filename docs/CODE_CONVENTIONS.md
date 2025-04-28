@@ -15,6 +15,7 @@ A route:
 A controller:
 * src/controllers/example.controller.js
 
+* https://github.com/felixge/node-style-guide
 
 ## Git convetions
 * See /docs/GIT_WORKFLOW -> 'Git branch convetions'
