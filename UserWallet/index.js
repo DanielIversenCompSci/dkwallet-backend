@@ -1,17 +1,23 @@
+// index.js
 import express from 'express';
-import dotenv from 'dotenv';
+import dotenv  from 'dotenv';
+import logger  from './Middleware/logger.js';
+import walletRoutes from './Routes/wallet.route.js';
+
 dotenv.config();
+const PORT = process.env.PORT || 3002;
 
-const PORT = process.env.PORT;
-const app  = express();
-
+const app = express();
 app.use(express.json());
+app.use(logger);
+app.use('/', walletRoutes);
 
-// one test route ***
-app.get('/ping', (req, res) => res.json({msg: 'pong from UserWallet service (ACK)'}));
+// ─── export for tests ──────────────────────────────────────────
+export default app;
 
-// on startup ***
-app.listen(PORT, () => {
-  console.log(`🚀 CredentialProvider serivce running → http://localhost:${PORT}`);
-  console.log(`'curl http://localhost:${PORT}/ping' in a new terminal to perform a ping test`);
-});
+// ─── start server only if not under Jest ───────────────────────
+if (process.env.JEST_WORKER_ID === undefined) {
+  app.listen(PORT, () => {
+    console.log(`🚀 UserWallet service running → http://localhost:${PORT}`);
+  });
+}
