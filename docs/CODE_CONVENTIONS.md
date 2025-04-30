@@ -7,6 +7,14 @@ Here will be guideliness regarding code conventions for this project. It will in
 <br>
 
 1. Use 'best practice' naming convention for the programming language you are using. Search the web for best practices. Same goes for camel case / snake case and so on...
+
+### Naming conventions
+#### Folders
+A route:
+* src/routes/example.route.js
+A controller:
+* src/controllers/example.controller.js
+
 * https://github.com/felixge/node-style-guide
 
 ## Git convetions

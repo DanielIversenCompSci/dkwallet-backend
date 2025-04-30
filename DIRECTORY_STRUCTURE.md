@@ -7,8 +7,12 @@ hello-api/
 │  │   └─ ping.routes.js
 │  ├─ controllers/
 │  └─ models/
+<<<<<<< HEAD
+├─ index.js
+=======
 ├─ index.js 
 ├─ tests/       # only if tests are made/needed
+>>>>>>> master
 ├─ .env
 ├─ .gitignore
 └─ package.json
