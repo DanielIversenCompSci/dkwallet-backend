@@ -15,8 +15,10 @@ Before starting a new feature or performing any general change to code, make sur
 2. Perform 'git pull origin master' to ensure your on the latest version before creating a feature branch.
 3. Perform 'git checkout -b nameOfFeatureBranch' (MAKE SURE TO FOLLOW FEATURE BRANCH NAMING CONVENTIONS, SEE CODE_CONVENTIONS.md).
 4. Make changes...
-5. When done making changes locally stage, commit and push the changes to GitHub by performing 'git add .', 'git commit -m "Commit Message"' and 'git push --set-upstream origin nameOfFeatureBranch' (MAKE SURE TO USE THE NAME OF YOUR CREATED FEATURE BRANCH FOR UPSTREAM).
-6. You changes have now been pushed to GitHub, next step is to create a pull request, navigate to https://github.com/DanielIversenCompSci/workout-backend and use the new changes pop-up to create a PR.
+5. When done making changes locally stage, commit and push the changes to GitHub by performing 'git add .', 'git commit -m "Commit Message"'
+6. Switch to master branch and perform 'git pull', then switch back to your feature branch and perform 'git merge master'. This ensures your changes are compatible with master before pushing them.
+7. Push by 'git push --set-upstream origin nameOfFeatureBranch' (MAKE SURE TO USE THE NAME OF YOUR CREATED FEATURE BRANCH FOR UPSTREAM).
+8. You changes have now been pushed to GitHub, next step is to create a pull request, navigate to https://github.com/DanielIversenCompSci/workout-backend and use the new changes pop-up to create a PR.
 
 
 
