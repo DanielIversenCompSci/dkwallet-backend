@@ -1,47 +1,7 @@
-openapi: 3.1.0
+openapi: 3.0.0
 info:
-  title: User-Wallet API
-  version: 0.1.0
-  description: Minimal endpoints for early integration tests
-servers:
-  - url: http://localhost:{port}
-    variables:
-      port:
-        default: 4000
-paths:
-  /ping:
-    get:
-      summary: Health-check
-      responses:
-        '200':
-          description: Wallet is alive
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  msg:
-                    type: string
-                    example: pong from UserWallet service (ACK)
-  /transactions:
-    post:
-      summary: Test transaction endpoint (echo)
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-            examples:
-              demo:
-                value: { "type": "TEST", "amount": 42 }
-      responses:
-        '201':
-          description: JSON payload echoed back
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  received:
-                    type: object
+  title: DKWallet – UserWallet
+  version: 1.0.0
+paths: {}
+components: {}
+tags: []

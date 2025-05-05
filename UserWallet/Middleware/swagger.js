@@ -1,15 +1,14 @@
-import swaggerUI from 'swagger-ui-express';
+// Middleware/swagger.js  – JSON version
+import swaggerUI     from 'swagger-ui-express';
 import { readFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import YAML from 'yaml';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const openapiDoc = YAML.parse(
-  readFileSync(resolve(__dirname, '../openapi/wallet-api.yaml'), 'utf8')
+const __dirname   = dirname(fileURLToPath(import.meta.url));
+const openapiDoc  = JSON.parse(
+  readFileSync(resolve(__dirname, '../openapi/wallet-api.json'), 'utf8')
 );
 
-// write a function …
 function initSwagger(app) {
   app.use(
     '/api-docs',
@@ -18,5 +17,4 @@ function initSwagger(app) {
   );
 }
 
-// …and export it as **default**
 export default initSwagger;

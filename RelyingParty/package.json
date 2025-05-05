@@ -10,7 +10,8 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "dev": "nodemon index.js",
+    "openapi": "node scripts/gen-openapi.js",
+    "dev": "npm run openapi && nodemon index.js",
     "start": "node index.js",
     "lint": "eslint . --ext .js,.mjs",
     "format": "prettier --write \"**/*.{js,json,md}\"",
@@ -23,7 +24,10 @@
   "devDependencies": {
     "eslint": "^9.25.1",
     "nodemon": "^3.1.10",
-    "prettier": "^3.5.3"
+    "prettier": "^3.5.3",
+    "swagger-autogen": "^2.23.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   },
   "keywords": []
 }
