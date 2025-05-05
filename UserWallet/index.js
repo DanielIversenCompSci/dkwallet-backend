@@ -3,6 +3,7 @@ import express from 'express';
 import dotenv  from 'dotenv';
 import logger  from './Middleware/logger.js';
 import walletRoutes from './Routes/wallet.route.js';
+import identificationReceiverRoutes from './Routes/identificationReceiver.route.js';
 import rxRoutes from './Routes/rx.route.js';
 import receiptRoutes from './Routes/receipt.route.js';
 
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use(logger);
 //mount routes
 app.use('/', walletRoutes);
+app.use('/', identificationReceiverRoutes);
 app.use('/', rxRoutes);
 app.use('/', receiptRoutes);
 
